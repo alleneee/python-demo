@@ -13,7 +13,7 @@ llm = ChatOpenAI(model="gpt-4o-mini",
 
 messages = [
     SystemMessage("you're a good assistant, you always respond with a joke."),
-    HumanMessage("i wonder why it's called langchain"),
+    HumanMessage("i wonder why it's called langchain-test"),
     AIMessage(
         'Well, I guess they thought "WordRope" and "SentenceString" just didn\'t have the same ring to it!'
     ),

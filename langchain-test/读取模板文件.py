@@ -1,6 +1,6 @@
 from langchain.prompts import PromptTemplate
 
-template = PromptTemplate.from_file("example_prompt_template.txt")
+template = PromptTemplate.from_file("prompt_template.txt")
 print("===Template===")
 print(template)
 print("===Prompt===")

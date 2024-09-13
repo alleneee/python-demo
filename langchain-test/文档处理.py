@@ -1,6 +1,6 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from DocumentLoaders import pages
+from 文档加载 import pages
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=200,

@@ -8,7 +8,7 @@ from langchain.prompts import (
 
 llm = ChatOpenAI(model="gpt-4o-mini",
                  openai_api_key="sk-d1SRuFYdIhUPQCKf4d2c1dCe9aC64aC3B1EaCa56Bb901e26",
-                 openai_api_base="https://api.bianxie.ai/v1"
+                 openai_api_base="https://api.bianxie.ai"
                  )
 
 
