@@ -5,6 +5,12 @@ from langchain.prompts import (
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
 )
+import os
+from datetime import datetime
+
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_PROJECT"] = "Chat-"+datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+os.environ["LANGCHAIN_API_KEY"] = "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"
 
 llm = ChatOpenAI(model="gpt-4o-mini",
                  openai_api_key="sk-d1SRuFYdIhUPQCKf4d2c1dCe9aC64aC3B1EaCa56Bb901e26",
