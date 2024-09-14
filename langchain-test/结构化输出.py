@@ -17,7 +17,7 @@ model_name = 'gpt-4o-mini'
 temperature = 0
 llm = ChatOpenAI(model="gpt-4o-mini",
                  openai_api_key="sk-d1SRuFYdIhUPQCKf4d2c1dCe9aC64aC3B1EaCa56Bb901e26",
-                 openai_api_base="https://api.bianxie.ai/v1"
+                 openai_api_base="https://api.bianxie.ai"
                  )
 # 定义结构化输出的模型
 structured_llm = llm.with_structured_output(Date)
@@ -85,7 +85,6 @@ print("\n解析后:")
 print(parser.invoke(output))
 
 # `OutputFixingParser` 利用大模型做格式自动纠错
-
 from langchain.output_parsers import OutputFixingParser
 
 new_parser = OutputFixingParser.from_llm(parser=parser, llm=ChatOpenAI())

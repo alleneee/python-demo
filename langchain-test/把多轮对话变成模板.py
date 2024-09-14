@@ -14,9 +14,7 @@ os.environ["LANGCHAIN_API_KEY"] = "lsv2_pt_78485ff727474cca8ba5d64681a04a9f_6f16
 
 llm = ChatOpenAI(model="gpt-4o-mini",
                  openai_api_key="sk-d1SRuFYdIhUPQCKf4d2c1dCe9aC64aC3B1EaCa56Bb901e26",
-                 openai_api_base="https://api.bianxie.ai"
-                 )
-
+                 openai_api_base="https://api.bianxie.ai")
 
 # 把Prompt模板看作带有参数的函数
 human_prompt = "Translate your answer to {language}."

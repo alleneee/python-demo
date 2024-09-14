@@ -5,9 +5,9 @@ import json
 
 # 配置 OpenAI 的聊天模型
 llm = ChatOpenAI(
-    model="gpt-3.5-turbo",
-    openai_api_key="your_openai_api_key",
-    openai_api_base="https://api.bianxie.ai"
+    model="gpt-4o-mini",
+    openai_api_key="sk-d1SRuFYdIhUPQCKf4d2c1dCe9aC64aC3B1EaCa56Bb901e26",
+    openai_api_base="https://api.bianxie.ai/v1"
 )
 
 # 定义工具函数
@@ -31,7 +31,6 @@ def main():
     try:
         # 调用 OpenAI API
         output = llm_with_tools.invoke(messages)
-
         # 如果 output 是字符串类型，输出提示
         if isinstance(output, str):
             print("Output is a string:", output)
